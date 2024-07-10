@@ -112,6 +112,7 @@ impl Emu {
     let op = self.fetch();
     // Decode
     // Execute
+    self.execute(op);
 }
 
 fn fetch(&mut self) -> u16 {
